@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --background-color: #ffffff;
+  --foreground-color: #242328;
+}
+
+html {
+  font-size: 24px;
+}
+body {
+  background: var(--background-color);
+  color: var(--foreground-color);
+  font-family: "Nunito", sans-serif;
+  max-width: 30rem;
+  height: 100%;
+  margin: auto;
+  padding: 0.25rem;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* a {
+  position: relative;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: gap 0.15s ease-in-out;
+  img {
+    height: 1.25rem;
+    scale: 1;
+    transition: scale 0.15s ease-in-out;
+  }
+}
+a:hover {
+   left: 0.25rem; 
+  gap: 0.4rem;
+  img {
+    scale: 1.25;
+  }
+} */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-color: #d7c7e1;
+    --background-color: #000000;
+  }
+  .colored-font {
+    filter: brightness(130%) saturate(70%);
+  }
+}
