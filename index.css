@@ -44,12 +44,15 @@ a:hover {
   color: var(--piss-color);
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .window {
   background: white;
   border: 3px solid var(--foreground-color);
   margin: 12px;
   padding: 3px;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
