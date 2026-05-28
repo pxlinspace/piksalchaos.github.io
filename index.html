@@ -29,7 +29,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/index.css" />
 
-    <script type="text/javascript" src="js/background-canvas.js" defer></script>
+    <script type="module" src="js/background-canvas.js"></script>
+    <script type="module" src="js/idiot-canvas.js"></script>
   </head>
 
   <body>
@@ -37,11 +38,12 @@
     <div style="display: flex">
       <div class="window flex-grow">
         <h2 class="window-bar">intro</h2>
-        <div class="window-content">
+        <div class="window-content" style="padding-bottom: 0">
           <p>Helooo, I'm Pixelin! (@pxlinspace)</p>
           <p>I'm an 18yo gamedev + animator from San Jose, CA</p>
           <p>Currently studying <b>CSE</b> @ <b>UC Irvine</b></p>
           <p>(<a>more abt me</a>)</p>
+          <canvas id="idiot-canvas"></canvas>
         </div>
       </div>
       <div class="window">
@@ -52,7 +54,7 @@
             alt="me"
             width="240"
             height="240"
-            style="image-rendering: pixelated"
+            style="image-rendering: pixelated; display: block"
           />
         </div>
       </div>

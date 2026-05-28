@@ -14,7 +14,8 @@ const context = canvas.getContext("2d");
 context.lineWidth = 3;
 const OFFSCREEN_OFFSET = 90;
 
-let previousTime_ms;
+let previousTime = null;
+const MAX_DELTA = 1 / 10;
 
 let fishies = [];
 
@@ -112,14 +113,14 @@ function newFish(yPosition = Math.random() * canvas.height) {
 
   return new Fish(x, y);
 }
-
-function update() {
-  const currentTime_ms = performance.now();
-  const deltaTime = Math.min(currentTime_ms - previousTime_ms) / 1000;
-  previousTime_ms = currentTime_ms;
+function update(timestamp) {
+  const dt = previousTime
+    ? Math.min((timestamp - previousTime) / 1000, MAX_DELTA)
+    : 0;
+  previousTime = timestamp;
 
   for (let i = 0; i < fishies.length; i++) {
-    fishies[i].update(deltaTime);
+    fishies[i].update(dt);
     if (fishies[i].y > canvas.height + OFFSCREEN_OFFSET) {
       fishies[i] = newFish(fishies[i].y % (canvas.height + OFFSCREEN_OFFSET));
     }
@@ -148,9 +149,9 @@ function setCanvasDimensions(canvas) {
 function initialize() {
   setCanvasDimensions(canvas);
   fishies = [];
-  for (i = 0; i < canvas.width * canvas.height * 0.00006; i++) {
+  for (let i = 0; i < canvas.width * canvas.height * 0.00006; i++) {
     fishies.push(newFish());
   }
 }
 
-update();
+requestAnimationFrame(update);
