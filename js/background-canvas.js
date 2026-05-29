@@ -1,4 +1,3 @@
-window.addEventListener("DOMContentLoaded", initialize);
 window.addEventListener("resize", () => {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
@@ -154,4 +153,5 @@ function initialize() {
   }
 }
 
+initialize();
 requestAnimationFrame(update);
