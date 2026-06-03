@@ -161,8 +161,6 @@ class Idiot {
         this.gotoNextFrame.bind(this),
         Idiot.ANIMATION_TIMES[this.animationRow],
       );
-    } else {
-      this.yVelocity = 0;
     }
   }
 }
@@ -229,7 +227,10 @@ addEventListener("mouseup", (event) => {
   if (event.button !== 0) return;
 
   for (let i = 0; i < idiots.length; i++) {
-    idiots[i].isGrabbed = false;
+    if (idiots[i].isGrabbed) {
+      idiots[i].isGrabbed = false;
+      idiots[i].yVelocity = 0;
+    }
   }
 });
 
