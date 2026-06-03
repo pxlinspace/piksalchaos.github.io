@@ -91,7 +91,7 @@ ul {
 .project-thumbnail {
   width: 100%;
   height: auto;
-  border: 3px solid var(--foreground-color);
+  border: 1px solid var(--foreground-color);
 }
 
 #background-canvas {
@@ -118,6 +118,12 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
+  a {
+    color: var(--foreground-color);
+  }
+  a:hover {
+    color: var(--piss-color);
+  }
 }
 
 /*@media (prefers-color-scheme: dark) {
