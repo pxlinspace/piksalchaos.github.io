@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <title>Justin Le</title>
+    <title>@pxlinspace</title>
 
-    <meta itemprop="name" content="Piksal's Website" />
-    <meta itemprop="description" content="I'm Justin Le!" />
+    <meta itemprop="name" content="@pxlinspace" />
+    <meta itemprop="description" content="Hi, I'm pixelin!" />
 
     <link
       rel="apple-touch-icon"
@@ -27,88 +27,75 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <script type="module" src="js/background-canvas.js"></script>
+    <script type="module" src="js/idiot-canvas.js"></script>
   </head>
 
   <body>
-    <div id="container">
-      <aside id="info-card">
-        <p class="colored-font hide-on-mobile" style="color: #8b7ec9">
-          Hi, I'm Justin Le!
-        </p>
-        <p class="caption hide-on-mobile">(aka. Piksal)</p>
-
-        <img
-          class="fitted-image foreground-filter hide-on-mobile"
-          style="aspect-ratio: 1/1"
-          src="/images/silly-piksal.gif"
-          alt=""
-        />
-
-        <nav id="nav-links">
-          <a class="bordered undecorated hover-shadow" href="/">home</a>
-          <a class="bordered undecorated hover-shadow" href="/projects/"
-            >projects</a
-          >
-          <a
-            class="bordered undecorated hover-shadow"
-            href="https://jnle.bearblog.dev/"
-            >blog</a
-          >
-        </nav>
-        <nav id="icon-links" class="foreground-filter">
-          <a href="https://www.youtube.com/@piksalchaos">
-            <img src="/images/icons/youtube.png" alt="youtube" />
-          </a>
-          <a href="https://www.instagram.com/piksal.chaos/">
-            <img src="/images/icons/instagram.png" alt="instagram" />
-          </a>
-          <a href="https://bsky.app/profile/piksal.bsky.social">
-            <img src="/images/icons/bluesky.png" alt="bluesky" />
-          </a>
-          <a href="https://piksal.itch.io/">
-            <img src="/images/icons/itch.png" alt="itch.io" />
-          </a>
-          <a href="https://github.com/piksalchaos">
-            <img src="/images/icons/github.png" alt="github" />
-          </a>
-        </nav>
-      </aside>
-
-      <main>
-        <p>Lol this site's a WIP. Have some placeholder text.</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </main>
+    <canvas id="background-canvas"></canvas>
+    <div style="display: flex">
+      <div class="window flex-grow">
+        <h2 class="window-bar">intro</h2>
+        <div class="window-content" style="position: relative">
+          <div style="position: relative; z-index: 1">
+            <p>Helooo, I'm Pixelin! (@pxlinspace)</p>
+            <p>- I'm an 18yo gamedev + animator from San Jose, CA</p>
+            <p>- studying <b>CSE</b> @ <b>UC Irvine</b></p>
+            <p>(<a href="about/">more abt me</a>)</p>
+          </div>
+          <canvas id="idiot-canvas"></canvas>
+        </div>
+      </div>
+      <div class="window">
+        <h2 class="window-bar">me</h2>
+        <div class="window-content" style="padding: 0">
+          <img
+            src="images/me.gif"
+            alt="me"
+            width="240"
+            height="240"
+            style="image-rendering: pixelated; display: block"
+          />
+        </div>
+      </div>
     </div>
-    <footer>
-      <iframe
-        id="bucket-webring"
-        style="
-          width: 100%;
-          max-width: 400px;
-          height: 2rem;
-          border: none;
-          border-radius: 1rem;
-        "
-        src="https://webring.bucketfish.me/embed.html?name=piksal"
-      ></iframe>
-    </footer>
+
+    <div style="display: flex">
+      <div>
+        <div class="window">
+          <h2 class="window-bar">nav</h2>
+          <nav class="window-content link-list">
+            <a href="https://pxlinspace.bearblog.dev/">blog</a>
+            <a href="/projects">projects</a>
+          </nav>
+        </div>
+
+        <div class="window">
+          <h2 class="window-bar">socials</h2>
+          <nav class="window-content link-list">
+            <a href="https://www.youtube.com/@pxlinspace">youtube</a>
+            <a href="https://www.instagram.com/pxlin.space">instagram</a>
+            <a href="https://bsky.app/profile/pxlinspace.bsky.social">
+              bluesky
+            </a>
+            <a href="https://x.com/pxlinspace">twitter</a>
+            <a href="https://pxlinspace.itch.io">itch.io</a>
+            <a href="https://www.github.com/pxlinspace">github</a>
+          </nav>
+        </div>
+      </div>
+      <div class="window flex-grow">
+        <h2 class="window-bar">main</h2>
+        <div class="window-content">
+          <p>THIS WEBSITE IS A WORK-IN-PROGRESS!</p>
+          <p>
+            It'll have more stuff when I make more stuff. In the meantime, feel
+            free to look around!
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
