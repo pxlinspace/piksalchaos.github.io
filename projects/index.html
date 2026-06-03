@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
   <head>
-    <title>Justin Le - Projects</title>
+    <title>@pxlinspace</title>
 
-    <meta itemprop="name" content="Piksal's Website" />
-    <meta itemprop="description" content="I'm Justin Le!" />
+    <meta itemprop="name" content="@pxlinspace - projects" />
+    <meta itemprop="description" content="Pixelin's projects" />
 
     <link
       rel="apple-touch-icon"
@@ -27,83 +27,91 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <script type="module" src="js/background-canvas.js"></script>
   </head>
 
   <body>
-    <div id="container">
-      <aside id="info-card">
-        <p class="colored-font hide-on-mobile" style="color: #8b7ec9">
-          Hi, I'm Justin Le!
-        </p>
-        <p class="caption hide-on-mobile">(aka. Piksal)</p>
+    <canvas id="background-canvas"></canvas>
+    <p>(<a href="/"> <- back </a>)</p>
+    <div id="project-list">
+      <div class="window">
+        <h2 class="window-bar">DREAMSKATER</h2>
+        <div class="window-content">
+          <img
+            class="project-thumbnail"
+            src="/images/thumbnails/DREAMSKATER.png"
+            alt="DREAMSKATER"
+          />
+          <p>
+            A precision puzzle game with only one button - made for
+            <b>GMTK Game Jam 2025</b>
+          </p>
+        </div>
+      </div>
+      <div class="window">
+        <h2 class="window-bar">Pixipaint</h2>
+        <div class="window-content">
+          <img
+            class="project-thumbnail"
+            src="/images/thumbnails/pixipaint.png"
+            alt="Pixipaint"
+          />
+          <p>
+            Picross inspired puzzle game where you must color every tile
+            correctly to win
+          </p>
+        </div>
+      </div>
+      <div class="window">
+        <h2 class="window-bar">Spadooshka</h2>
+        <div class="window-content">
+          <img
+            class="project-thumbnail"
+            src="/images/thumbnails/spadooshka.png"
+            alt="Spadooshka"
+          />
+          <p>
+            1v1 first-person shooter focused on platforming - made for Hack
+            Club's
+            <b>Juice</b> game jam
+          </p>
+        </div>
+      </div>
+      <div class="window">
+        <h2 class="window-bar">ChatGPMe</h2>
+        <div class="window-content">
+          <img
+            class="project-thumbnail"
+            src="/images/thumbnails/chatgpme.png"
+            alt="ChatGPMe"
+          />
+          <p>
+            A game that won <b>Hack the North 2024</b> where <em>you</em> are
+            the LLM answering peoples' prompts
+          </p>
+        </div>
+      </div>
+      <div class="window">
+        <h2 class="window-bar">Spacecat Adventure</h2>
+        <div class="window-content">
+          <img
+            class="project-thumbnail"
+            src="/images/thumbnails/spacecatadventure.png"
+            alt="Spacecat Adventure"
+          />
+          <p>A short platformer and the first game I've ever released online</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 
-        <img
-          class="fitted-image foreground-filter hide-on-mobile"
-          style="aspect-ratio: 1/1"
-          src="/images/silly-piksal.gif"
-          alt=""
-        />
+<!--<!DOCTYPE html>
+<html lang="en-US">
 
-        <nav id="nav-links">
-          <a class="bordered undecorated hover-shadow" href="/">home</a>
-          <a class="bordered undecorated hover-shadow" href="/projects/"
-            >projects</a
-          >
-          <a
-            class="bordered undecorated hover-shadow"
-            href="https://jnle.bearblog.dev/"
-            >blog</a
-          >
-        </nav>
-        <nav id="icon-links" class="foreground-filter">
-          <a href="https://www.youtube.com/@piksalchaos">
-            <img src="/images/icons/youtube.png" alt="youtube" />
-          </a>
-          <a href="https://www.instagram.com/piksal.chaos/">
-            <img src="/images/icons/instagram.png" alt="instagram" />
-          </a>
-          <a href="https://bsky.app/profile/piksal.bsky.social">
-            <img src="/images/icons/bluesky.png" alt="bluesky" />
-          </a>
-          <a href="https://piksal.itch.io/">
-            <img src="/images/icons/itch.png" alt="itch.io" />
-          </a>
-          <a href="https://github.com/piksalchaos">
-            <img src="/images/icons/github.png" alt="github" />
-          </a>
-        </nav>
-      </aside>
-
-      <main class="flex-container">
-        <a
-          href="https://piksal.itch.io/dreamskater"
-          class="project-container bordered hover-shadow"
-        >
-          <img src="/images/thumbnails/DREAMSKATER.png" alt="DREAMSKATER" />
-          <div>
-            <p style="color: #bb4f6c" class="colored-font">DREAMSKATER</p>
-            <p class="caption">
-              A precision puzzle game with only one button - made for
-              <b>GMTK Game Jam 2025</b>
-            </p>
-          </div>
-        </a>
-        <a
-          href="https://pixipaint.jnle.dev"
-          class="project-container bordered hover-shadow"
-        >
-          <img src="/images/thumbnails/pixipaint.png" alt="Pixipaint" />
-          <div>
-            <p style="color: #635ab2" class="colored-font">Pixipaint</p>
-            <p class="caption">
-              Picross inspired puzzle game where you must color every tile
-              correctly to win
-            </p>
-          </div>
-        </a>
-        <a
-          href="https://juice.hackclub.com/games?hackerId=recoMkC8KrWoN3zHo"
+          href="https://pxlinspace.itch.io/spadooshka"
           class="project-container bordered hover-shadow"
         >
           <img src="/images/thumbnails/spadooshka.png" alt="Spadooshka" />
@@ -162,4 +170,4 @@
       ></iframe>
     </footer>
   </body>
-</html>
+</html>-->

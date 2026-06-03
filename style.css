@@ -88,6 +88,12 @@ ul {
   margin-bottom: 2rem;
 }
 
+.project-thumbnail {
+  width: 100%;
+  height: auto;
+  border: 3px solid var(--foreground-color);
+}
+
 #background-canvas {
   position: fixed;
   top: 0;
@@ -106,6 +112,12 @@ ul {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   z-index: 0;
+}
+
+#project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
 }
 
 /*@media (prefers-color-scheme: dark) {
