@@ -35,59 +35,121 @@
 
   <body>
     <canvas id="background-canvas"></canvas>
-    <div style="display: flex">
+    <div style="display: flex; align-items: center">
       <div class="window flex-grow">
-        <h2 class="window-bar">intro</h2>
+        <h1 class="window-bar">intro</h1>
         <div class="window-content" style="position: relative">
-          <div style="position: relative; z-index: 1">
-            <p>Helooo, I'm Pixelin! (@pxlinspace)</p>
+          <div style="position: relative; z-index: 1; margin-bottom: 60px">
+            <h2>Helooo, I'm Pixelin! (@pxlinspace)</h2>
             <p>- I'm an 18yo gamedev + animator from San Jose, CA</p>
             <p>- studying <b>CSE</b> @ <b>UC Irvine</b></p>
-            <p>(<a href="about/">more abt me</a>)</p>
+            <p>(<a href="about/">more about me</a>)</p>
           </div>
           <canvas id="idiot-canvas"></canvas>
         </div>
       </div>
-      <div class="window">
+      <div class="window hide-on-shrink" style="height: fit-content">
         <h2 class="window-bar">me</h2>
-        <div class="window-content" style="padding: 0">
-          <img
-            src="images/me.gif"
-            alt="me"
-            width="240"
-            height="240"
-            style="image-rendering: pixelated; display: block"
-          />
-        </div>
+        <div class="me-icon window-content"></div>
       </div>
     </div>
 
-    <div style="display: flex">
-      <div>
-        <div class="window">
-          <h2 class="window-bar">nav</h2>
+    <div class="responsive-row-to-column">
+      <div class="responsive-column-to-row">
+        <div class="window flex-grow">
+          <h1 class="window-bar">nav</h1>
           <nav class="window-content link-list">
-            <a href="https://pxlinspace.bearblog.dev/">blog</a>
-            <a href="/projects">projects</a>
+            <a href="https://pxlinspace.bearblog.dev/">
+              <img src="/images/icons/blog.png" alt="blog" class="link-icon" />
+              blog
+            </a>
+            <a href="/projects">
+              <img
+                src="/images/icons/projects.png"
+                alt="projects"
+                class="link-icon"
+              />
+              projects
+            </a>
+            <a href="/art">
+              <img src="/images/icons/art.png" alt="art" class="link-icon" />
+              art
+            </a>
+            <a href="/music">
+              <img
+                src="/images/icons/music.png"
+                alt="music"
+                class="link-icon"
+              />
+              music
+            </a>
+            <a href="/guestbook">
+              <img
+                src="/images/icons/guestbook.png"
+                alt="guestbook"
+                class="link-icon"
+              />
+              guestbook
+            </a>
           </nav>
         </div>
 
-        <div class="window">
-          <h2 class="window-bar">socials</h2>
+        <div class="window flex-grow">
+          <h1 class="window-bar">socials</h1>
           <nav class="window-content link-list">
-            <a href="https://www.youtube.com/@pxlinspace">youtube</a>
-            <a href="https://www.instagram.com/pxlin.space">instagram</a>
+            <a href="https://www.youtube.com/@pxlinspace">
+              <img
+                src="/images/icons/youtube.png"
+                alt="youtube"
+                class="link-icon"
+              />
+              youtube
+            </a>
+            <a href="https://www.instagram.com/pxlin.space">
+              <img
+                src="/images/icons/instagram.png"
+                alt="instagram"
+                class="link-icon"
+              />
+              instagram
+            </a>
             <a href="https://bsky.app/profile/pxlinspace.bsky.social">
+              <img
+                src="/images/icons/bluesky.png"
+                alt="bluesky"
+                class="link-icon"
+              />
               bluesky
             </a>
-            <a href="https://x.com/pxlinspace">twitter</a>
-            <a href="https://pxlinspace.itch.io">itch.io</a>
-            <a href="https://www.github.com/pxlinspace">github</a>
+            <a href="https://x.com/pxlinspace">
+              <img
+                src="/images/icons/twitter.png"
+                alt="twitter"
+                class="link-icon"
+              />
+              twitter
+            </a>
+            <a href="https://pxlinspace.itch.io">
+              <img
+                src="/images/icons/itchio.png"
+                alt="itch.io"
+                class="link-icon"
+              />
+              itch.io
+            </a>
+            <a href="https://www.github.com/pxlinspace">
+              <img
+                src="/images/icons/github.png"
+                alt="github"
+                class="link-icon"
+              />
+              github
+            </a>
           </nav>
         </div>
       </div>
-      <div class="window flex-grow">
-        <h2 class="window-bar">main</h2>
+      <div class="window">
+        <h1 class="window-bar">main</h1>
         <div class="window-content">
           <p>THIS WEBSITE IS A WORK-IN-PROGRESS!</p>
           <p>
