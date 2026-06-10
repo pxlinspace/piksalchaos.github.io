@@ -8,5 +8,7 @@ It is built entirely with vanilla HTML + CS + JS. The animated fish background a
 I've redesigned this website a lot of times, sometimes even trying out frameworks for more advanced functionality, but I always come back to vanilla HTML for simplicity.
 I've opted for this pixel style because it's charming and fun, but still flexible enough to adapt to big changes in the website's content. 
 
+AI use clarification: This project was assisted by Zed editor's AI predictions, but was otherwise coded by hand.
+
 <img width="1634" height="959" alt="image" src="https://github.com/user-attachments/assets/7ff1c2ad-96fc-4a45-9dc2-0d4aae374380" />
 <img width="1432" height="1061" alt="image" src="https://github.com/user-attachments/assets/85104128-299b-43ad-ac15-ceeef4397d83" />
