@@ -63,6 +63,15 @@ a:hover {
   }
 }
 
+.inactive-link,
+.inactive-link:hover {
+  color: var(--foreground-color);
+  .link-icon {
+    filter: invert(31%) sepia(11%) saturate(1665%) hue-rotate(208deg)
+      brightness(96%) contrast(83%);
+  }
+}
+
 ul {
   list-style-type: "*  ";
 }
