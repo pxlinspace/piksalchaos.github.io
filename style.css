@@ -5,6 +5,8 @@
   --foreground-color: #575279;
   --miku-color: #6ea398;
   --piss-color: #dcb34c;
+  --blue-color: #2b6bc5;
+  --purple-color: #864fa6;
 }
 
 @font-face {
@@ -69,6 +71,24 @@ li {
   margin: 1rem 0;
 }
 
+.gradient-text {
+  background: linear-gradient(135deg, #cf39ed, #257beb, #cf39ed);
+  background-size: 400% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-scroll 10s linear infinite;
+}
+
+@keyframes gradient-scroll {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: 400% center;
+  }
+}
+
 .responsive-row-to-column {
   display: flex;
   flex-direction: row;
@@ -118,6 +138,13 @@ li {
   border: 3px solid var(--foreground-color);
   padding: 0.5rem;
   margin-bottom: 12px;
+
+  flex-grow: 1;
+}
+
+.textbox-flex-container {
+  display: flex;
+  gap: 12px;
 }
 
 .project-thumbnail {
@@ -132,6 +159,16 @@ li {
   background-size: cover;
   width: 240px;
   height: 240px;
+}
+
+.about-header {
+  background-color: var(--background-color);
+  font-size: 2rem;
+  text-align: center;
+  margin: 60px auto 12px auto;
+  border: 3px solid var(--foreground-color);
+  padding: 0.5rem;
+  width: fit-content;
 }
 
 #idiot-canvas {
@@ -180,7 +217,8 @@ li {
   html {
     font-size: 28px;
   }
-  .responsive-row-to-column {
+  .responsive-row-to-column,
+  .textbox-flex-container {
     flex-direction: column;
   }
   .responsive-column-to-row {
